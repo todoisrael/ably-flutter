@@ -20,6 +20,18 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 33  // Make sure this is set to your desired SDK version
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 33  // Align this with your project's target SDK version
+    }
+
+    buildFeatures {
+        buildConfig = true  // Enable BuildConfig
+    }
+}
 
 dependencies {
     // https://github.com/ably/ably-java/
