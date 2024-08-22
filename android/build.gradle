@@ -21,6 +21,8 @@ rootProject.allprojects {
 
 apply plugin: 'com.android.library'
 android {
+    namespace 'io.ably.flutter.plugin'
+
     compileSdkVersion 33  // Make sure this is set to your desired SDK version
 
     defaultConfig {
